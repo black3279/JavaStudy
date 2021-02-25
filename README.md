@@ -93,3 +93,13 @@ cf) 메서드 파라미터로 전달될때 기본형 변수의 경우, 기존의
   - (파라미터) -> {구현부} 의 형태로 작성한다.
   - 파라미터가 하나일 경우, 소괄호를 생략가능하며 실행 문장이 한 문장일 경우 중괄호와 ; 역시 생략한다. (할수있다.)
   - 하지만 파라미터가 하나도 없는 경우는 소괄호를 생략할 수 없다.
+  - 람다식 내에서 this 와 외부클래스.this 는 동일한 객체를 나타낸다. (외부 클래스를 나타낸다)
+  cf) 함수형 인터페이스 패키지 기본 API
+  : Consumer, Supplier, Function, Operation, Predicate 계열
+
+## 13. java.lang 패키지
+- System 패키지에서 환경변수 관련 설정을 참고할 수 있다.
+- StringBuffer 는 멀티스레드에서 안전하므로 무겁고 StringBuilder 는 반대다.
+- Wrapper 클래스에는 Byte, Character, Short, Integer, Long, Float, Double, Boolean 이 있으며 기본형을 객체로 만들기 위한 클래스들이다.
+- Wrapper 클래스는 오토박싱과 언박싱을 지원한다.
+- StringTokenizer 는 문자열을 구분자 캐릭터를 이용해 분리해주는 클래스이다. 키:값 과 같은 쌍 데이터를 분리할 때 유용하다.
